@@ -1,0 +1,9 @@
+colors :
+
+primiry_color_1 : #12B886 == > background button /  hover link
+
+primiry_color_2 :##147161 == > background button hover / les Grand titre 
+
+primiry_color_3 : #7E7E7E == > les paraghraphe
+
+primiry_color_4 : white ==> text inside image

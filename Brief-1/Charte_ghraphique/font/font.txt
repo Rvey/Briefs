@@ -1,0 +1,11 @@
+font Segoe UI :
+
+Segoe UI Bold == > les grands titres
+
+Segoe UI Bold-italic == > les sous titres image
+
+Segoe UI Semi bold == > les Sous titres
+
+Segoe UI Semi bold italic ==> les buttons
+
+Segoe UI regular == > les paraghraphes
