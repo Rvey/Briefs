@@ -1,4 +1,4 @@
-# maquette design une agence touristique
+# Maquette design une agence touristique
 
 
 # Team :
