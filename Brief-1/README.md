@@ -6,7 +6,7 @@
 <a href="https://github.com/zolmine">Mohamed Amine Sobhi</a><br/>
 <a href="https://github.com/Rvey">Redouane Bouabana</a>
 #
-<img src="Charte_ghraphique/images/responsive.png">
+<img src="Charte_ghraphique/imges/responsive.png">
 
 
 Dans le but d'améliorer son UI/UX et d'ajouter d'autres pages à son site ,une agence touristique va vous fournir la maquette de son site afin de :
