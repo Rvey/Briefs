@@ -7,6 +7,9 @@
 <a href="https://github.com/Rvey">Redouane Bouabana</a>
 
 
+<img src="Charte_ghraphique/imges/responsive.png">
+
+
 # Trello Board
 
 <img src="trello_progress/progress 1.png">
