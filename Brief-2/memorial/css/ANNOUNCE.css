@@ -1,0 +1,105 @@
+:root {
+    --color1: #000000;
+    --color2: #000000;
+    --color3: #81256C;
+    --color4: #B32137;
+    --white: #ffffff;
+  }
+  *{
+      color: var(--color1);
+  }
+.header--container{
+    
+    background-image: url(../extra/banner2.png);
+    background-size: cover;
+}
+.text-container{
+padding: 3rem;
+}  
+.we{
+    font-weight: bolder;
+}
+.text-1 , .we{
+    color: var(--white);
+}
+.annouce-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: rem;
+    color: var(--color1);
+    padding: 1rem;
+    
+}
+#h-l{
+    color: var(--color3);
+}
+
+.writers-card-container{
+text-align: center;
+width: 60vw;
+background-color: var(--color3);
+margin: 10px;
+border-radius: 20px;
+
+    
+}
+.writer-name #p1{
+    font-weight: bold;
+}
+.writer-img img{
+    border-radius: 100px;
+    width: 80px;
+    padding-bottom: 10px;
+}
+.writer-desc #p2{
+    color:var(--white) ;
+    
+    padding: 10px;
+}
+.writers-cards-container{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:50px ;
+}
+.giv{
+    background-color: var(--color4);
+    height: 10rem;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#p3{
+padding: 15px ;
+color: var(--white);
+font-weight: bolder;
+text-align: center;
+
+}
+.book-ad{
+    margin: 50px;
+}
+.qoute{
+    background-color: var(--color3);
+}
+#p4{
+    color:var(--white) ;
+    padding: 30px;
+    text-align: center;
+}
+.fair-img img{
+    padding: 20px;
+}
+.fair-txt{
+    padding: 20px;
+
+}
+#p-t{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub{
+    background-color: var(--color2);
+}
