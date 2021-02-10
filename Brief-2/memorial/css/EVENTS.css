@@ -1,0 +1,170 @@
+:root {
+    --color1: #000000;
+    --color2: #282727;
+    --color3: #81256C;
+    --color4: #B32137;
+    --white: #ffffff;
+    --grey: rgba(0,0,0, .1);
+  }
+.discover{
+    text-align: center;
+    background-image: url(../extra/discoverbooks.png);
+    background-size: cover;
+}
+.wew{
+    padding: 3rem;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.card-event {
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+    
+}
+.card-event img{
+    max-width: 300px;
+
+}
+
+.top-event{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(129,37,108,1) 0%, rgba(179,33,55,0.6166841736694677) 50%, rgba(175,33,59,0.6334908963585435) 75%);
+}
+.input{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+#sub-txt{
+    color: black;
+    padding:0 20px 20px 20px;
+}
+#inp{
+    
+    max-width: 30rem;
+    
+    width: 75%;
+    height: 50px;
+    padding: 20px;    
+}
+.btn-sub{
+    background-color: black;
+    color: var(--white);
+    height:50px ;
+    width: 10rem;
+    border: none;
+}  
+.card-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+.up-event-c{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}    
+
+.event-search{
+    text-align: center;
+    margin-top: 10px;
+}
+.upcoming-events{
+    margin: 3em;
+}
+
+.up-events-t{
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.festival-t{
+    background-image: url(/extra/festival.png);
+   background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.festival-card{
+    
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+
+}
+.c1{
+    background-image: url(/extra/SPAIN.jpg);
+}
+.c2{
+    background-image: url(/extra/italy.png);
+}
+.c3{
+    background-image: url(/extra/tokyo-ops-7-19.jpg);
+}
+#f , #d{
+    
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 40px;
+}
+#d{
+    background-color: #81256c6b;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.btn-f{
+    position: absolute;
+    
+    height: 50px;
+    width: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+.btn-f:hover{
+    background-color: var(--color4);
+    color: var(--white);
+
+}
+.card-e {
+    margin: 10px;
+    max-width: 300px;
+}
+#discover{
+    font-weight: bolder;
+    text-align: center;
+    background-image: url(/extra/discoverbooks.png);
+    background-size: cover;
+    padding: 3rem;
+    color: var(--white);
+}
+.featured{
+    text-align: center;
+    margin: 1rem;
+    font-weight: bolder;
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.books-container{
+    margin: 10px;
+}
+.book-image{
+    max-width: 20rem;
+    max-height:40rem;
+}
+.book-d{
+    text-align: center;
+    padding: 10px;
+}

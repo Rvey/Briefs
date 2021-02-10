@@ -1,9 +1,14 @@
 :root {
     --color1: #000000;
-    --color2: #000000;
+    --color2: #282727;
     --color3: #81256C;
     --color4: #B32137;
     --white: #ffffff;
+    --grey: rgba(0,0,0, .1);
+  }
+
+  body {
+      transition: transform 250ms ease-in-out;
   }
   *{
       color: var(--color1);
@@ -25,43 +30,57 @@ padding: 3rem;
 .annouce-title{
     font-weight: bold;
     text-align: center;
-    margin-bottom: rem;
     color: var(--color1);
-    padding: 1rem;
+    padding: 3rem;
     
 }
 #h-l{
-    color: var(--color3);
+    color: var(--color4);
 }
 
 .writers-card-container{
 text-align: center;
-width: 60vw;
-background-color: var(--color3);
-margin: 10px;
+background-color: var(--grey);
+margin: 25px;
 border-radius: 20px;
+max-width: 20rem;
+box-shadow: -1px 6px 11px -1px #000000b0;
+transition: 300ms;
 
     
 }
+.writers-card-container:hover{
+    box-shadow: -1px 6px 11px 5px #000000b0;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 300ms;
+    background-color: #81256c48;
+    
+    
+}
+
 .writer-name #p1{
     font-weight: bold;
 }
 .writer-img img{
     border-radius: 100px;
     width: 80px;
-    padding-bottom: 10px;
-}
-.writer-desc #p2{
-    color:var(--white) ;
-    
     padding: 10px;
 }
+.writer-desc #p2{
+    color:var(--color1) ;
+    max-width: 40rem;
+    padding: 20px 20px;
+    
+}
+
 .writers-cards-container{
  
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom:50px ;
+    justify-content: center;
 }
 .giv{
     background-color: var(--color4);
@@ -83,6 +102,9 @@ text-align: center;
 }
 .qoute{
     background-color: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #p4{
     color:var(--white) ;
@@ -91,9 +113,17 @@ text-align: center;
 }
 .fair-img img{
     padding: 20px;
+    height: 30em;
+    object-fit: cover;
+    object-position:center;
+    width: 100%;
 }
+   
+    
+
 .fair-txt{
     padding: 20px;
+    max-width: 40rem;
 
 }
 #p-t{
@@ -102,4 +132,54 @@ text-align: center;
 }
 .sub{
     background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 15em;
+    
+}
+.input{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+#sub-txt{
+    color: var(--white);
+    padding:0 20px 20px 20px;
+}
+#inp{
+    background-color: var(--white);
+    max-width: 30rem;
+    border: none;
+    width: 75%;
+    height: 50px;
+    padding: 20px;    
+}
+.btn-sub{
+    background-color: var(--color4);
+    border:none;
+    color: var(--white);
+    height:50px ;
+    width: 10rem;
+    
+    
+}
+
+.location{
+    text-align: center;
+    margin: 10px;
+}
+#p5{
+    font-weight: bold;
+    margin: 2rem;
+}
+.dsr{
+    background-color: var(--color2);
+    margin-top: 2rem;
+}
+.dsr-txt{
+    color: var(--white);
+    font-weight: bold;
+    padding: 5px;
 }
