@@ -6,9 +6,16 @@
     --white: #ffffff;
     --grey: rgba(0,0,0, .1);
   }
+  *{
+      color: var(--color1);
+  }
+  #h-l{
+    color: var(--color4);
+}
+
 .discover{
     text-align: center;
-    background-image: url(../extra/discoverbooks.png);
+    background-image: url(extra/discoverbooks.png);
     background-size: cover;
 }
 .wew{
@@ -24,8 +31,14 @@
 }
 .card-event img{
     max-width: 300px;
-
+    transition: 350ms;
+    
 }
+.card-event:hover{
+    transform: translateY(-10px);
+    transition: 350ms;
+}
+
 
 .top-event{
     display: flex;
@@ -66,6 +79,7 @@
 }  
 .up-event-c{
 display: flex;
+position: relative;
 flex-direction: column;
 justify-content: center;
 }    
@@ -85,11 +99,12 @@ justify-content: center;
 }
 
 .festival-t{
-    background-image: url(/extra/festival.png);
+    background-image: url(extra/festival_.png);
    background-size: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
 .festival-card{
     
     background-size: cover;
@@ -99,19 +114,25 @@ justify-content: center;
 
 }
 .c1{
-    background-image: url(/extra/SPAIN.jpg);
+    background-image: url(extra/SPAIN.jpg);
 }
 .c2{
-    background-image: url(/extra/italy.png);
+    background-image: url(extra/italy.png);
 }
 .c3{
-    background-image: url(/extra/tokyo-ops-7-19.jpg);
+    background-image: url(extra/tokyo-ops-7-19.jpg);
 }
 #f , #d{
     
     color: #ffffff;
     font-weight: bolder;
     padding: 40px;
+}
+#f{
+    background-image: url(extra/29.New-Suns-on-Level-G-of-the-Barbican-Centre\,-October-2019\,-CREDIT-Ralph-Pritchard.png);
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 #d{
     background-color: #81256c6b;
@@ -121,6 +142,8 @@ justify-content: center;
 }
 .btn-f{
     position: absolute;
+    bottom: 0;
+    right: 0;
     
     height: 50px;
     width: 150px;
@@ -136,35 +159,110 @@ justify-content: center;
 .card-e {
     margin: 10px;
     max-width: 300px;
+    transition: 350ms;
+}
+.card-e:hover{
+    transform: translateY(-10px);
+    transition: 350ms;
 }
 #discover{
     font-weight: bolder;
     text-align: center;
-    background-image: url(/extra/discoverbooks.png);
+    background-image: url(extra/discoverbooks.png);
     background-size: cover;
     padding: 3rem;
     color: var(--white);
 }
 .featured{
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
     font-weight: bolder;
 }
 .books{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 6rem;
 
 }
 
 .books-container{
-    margin: 10px;
+    margin: 30px;
+    max-width: 80vw;
 }
+.books-container:hover{
+    transform: scale(2);
+    margin: 40px;
+    
+}
+.b-description{
+    display: none;
+}
+.bookS-container:hover + .b-description {
+    display: block;
+    color: #B32137;
+    
+  }
 .book-image{
-    max-width: 20rem;
-    max-height:40rem;
+    width: 100px;
+    
 }
 .book-d{
+    
     text-align: center;
-    padding: 10px;
+    font-size: 10px;
+    
+}
+
+.picks{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.pick-container{
+    margin: 20px;
+    text-align: center;
+}
+.pick-img{
+    max-width: 10em;
+}
+
+#aboutA{
+    font-weight: bold;
+}
+.pick-desc{
+    margin: 10px;
+    font-size: 1em;
+    max-width: 20em;
+}
+.picks-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dsr-txt {
+    padding:35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding-bottom: 65px;
+}
+.location{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width:90vw;
+    height:300px;
+}
+.p5 p{
+    font-size: 24px;
+    margin: 1rem;
+    font-weight: bold;   
+   
 }

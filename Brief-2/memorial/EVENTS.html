@@ -18,11 +18,15 @@
       <link rel="stylesheet" href="css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
+      
+      
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <link rel="stylesheet" href="css/EVENTS.css">
+      <link rel="stylesheet" href="css/EVENTS-QUERY.css">
+      
       
       <!-- Tweaks for older IEs-->
       <!--[if lt IE 9]>
@@ -55,9 +59,9 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li > <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">ANNOUNCE</a> </li>
+                                 <li> <a href="ANNOUNCE.html">ANNOUNCE</a> </li>
                                  <li><a href="books.html">Our Books</a></li>
-                                 <li class="active"><a href="library.html">EVENTS</a></li>
+                                 <li class="active"><a href="EVENTS.html">EVENTS</a></li>
                                  <li><a href="contact.html">Contact us</a></li>
                                  <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
@@ -93,8 +97,10 @@
     </div>
       <!-- end Library -->
       <div class="top-event">
-      <div class="card-event"> <img src="/extra/event-banner 2.png" alt="" srcset=""> </div>
-      <div class="card-event"> <img src="/extra/event-banner 5.png" alt="" srcset=""> </div>
+      <div class="card-event"> <img src="extra/event-banner 2.png" alt="" srcset=""> </div>
+      <div class="card-event"> <img class="event-img" src="extra/event-banner 5.png" alt="" srcset=""> </div>
+      <div class="card-event"> <img src="extra/event-banner 5.png" alt="" srcset=""> </div>
+      <div class="card-event"> <img src="extra/event-banner 5.png" alt="" srcset=""> </div>
    </div>
             <!-- end Library -->
             <h3 class="event-search">looking for events near you?</h3>
@@ -147,26 +153,67 @@
 <!--gallery-->
 <div class="gallery"><h1 id="discover">Discover Our Gallery</h1>
 </div>
-<h1 class="featured">FEATURED BESTSELLERS</h1>
+<h1 class="featured">FEATURED <span id="h-l">BESTSELLERS</span></h1>
 <div class="books">
 <div class="books-container">
-   <div class="book-image"><img src="/extra/water.jpg" alt="" srcset=""></div>
-   <div><p class="book-d">THE IMPERFECTIONS OF MEMORY</p> </div>
+   <div class="book-image"><img src="extra/water.jpg" alt="" srcset=""></div>
+   <div class="b-description">kfslkd,f</div>
+   
 </div>
 <div class="books-container">
-   <div class="book-image"><img src="/extra/memory.jpg" alt="" srcset=""></div>
-   <div><p class="book-d">THE IMPERFECTIONS OF MEMORY</p> </div>
+   <div class="book-image"><img src="extra/memory.jpg" alt="" srcset=""></div>
+   
 </div>
 <div class="books-container">
-   <div class="book-image"><img src="/extra/million.jpg" alt="" srcset=""></div>
-   <div><p class="book-d">THE IMPERFECTIONS OF MEMORY</p> </div>
+   <div class="book-image"><img src="extra/million.jpg" alt="" srcset=""></div>
+   
+</div>
+   <div class="books-container">
+      <div class="book-image"><img src="extra/earth.jpg" alt="" srcset=""></div>
+   
 </div>
 <div class="books-container">
-   <div class="book-image"><img src="/extra/earth.jpg" alt="" srcset=""></div>
-   <div><p class="book-d">THE IMPERFECTIONS OF MEMORY</p> </div>
+   <div class="book-image"><img src="extra/power.jpg" alt="" srcset=""></div>
+
 </div>
+<div class="books-container">
+   <div class="book-image"><img src="extra/water.jpg" alt="" srcset=""></div>
+
+</div>
+</div>
+
+<h1 class="picks">PICKS OF THE <span id="h-l">MONTH</span></h1>
+<div class="picks-container">
+<div class="pick-container">
+   <img src="extra/earth.jpg" alt="" class="pick-img">
+   <p class="pick-desc"> <span id="aboutA">About the Author</span> <br>
+      Eden Dawn is the award-winning style editor for Portland Monthly, Oregon's number-one-selling magazine. She's a beloved personality in the community, often seen judging drag queen pageants, sitting on several advisory boards, chatting through live television segments, emceeing fundraising galas, performing at storytelling events, and hosting her own quarterly series Fashion in Film at the historic Hollywood Theater.</p>
+</div>
+<div class="pick-container">
+   <img src="extra/memory.jpg" alt="" class="pick-img">
+   <p class="pick-desc"> <span id="aboutA">About the Author</span> <br>
+      Eden Dawn is the award-winning style editor for Portland Monthly, Oregon's number-one-selling magazine. She's a beloved personality in the community, often seen judging drag queen pageants, sitting on several advisory boards, chatting through live television segments, emceeing fundraising galas, performing at storytelling events, and hosting her own quarterly series Fashion in Film at the historic Hollywood Theater.</p>
+</div>
+<div class="pick-container">
+   <img src="extra/million.jpg" alt="" class="pick-img">
+   <p class="pick-desc"> <span id="aboutA">About the Author</span> <br>
+      Eden Dawn is the award-winning style editor for Portland Monthly, Oregon's number-one-selling magazine. She's a beloved personality in the community, often seen judging drag queen pageants, sitting on several advisory boards, chatting through live television segments, emceeing fundraising galas, performing at storytelling events, and hosting her own quarterly series Fashion in Film at the historic Hollywood Theater.</p>
+</div>
+      </div>
+      <!--location-->
+      <!-- location -->
+<div class="location">
+   <div class="p5">
+<p id="p5">Where you can find us</p>
+</div>
+<div class="map"><iframe class="mapf" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16046.413957951434!2d-9.245992941848554!3d32.2757551452991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ea6f965fc1cd46!2zTGlicmFpcmllIFBhcGV0ZXJpZSBFc3BhY2UgTGl2cmUg2YXZg9iq2KjYqSDZiNix2KfZgtipINmB2LbYp9ihINin2YTZg9iq2KfYqA!5e0!3m2!1sen!2sma!4v1612984846406!5m2!1sen!2sma"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+</div>
+<!-- dont stop-->
+<div class="giv dsr">
+<h1 class="dsr-txt">" DONT STOP READING --</h1>
 </div>
       <!-- footer -->
+      
       <footer>
          <div class="footer">
             <div class="container">

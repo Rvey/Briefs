@@ -21,17 +21,8 @@
     .annouce-title{
         padding: 3rem;
     }
-    .map{
-    width: 30rem;
-    height: 19rem;
-    }
-    .location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 18px;
-    }
-    }
+    
+   
 
 @media only screen and (min-width: 768px){
     .book-img img{
@@ -48,4 +39,36 @@
             padding: 7rem;
             } 
             
+}
+@media only screen and (min-width: 718px){
+    iframe{
+        width:500px;
+        height:300px;
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        margin: 45px 19px;
+        
+    }
+    .p5 p {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        color: white;
+        background-color: #b3213775;
+        
+
+    }
+    .p5{
+        height: 300px;
+        background-image:url(extra/jRowling\ \(2\).png) ;
+       background-size: cover;
+        position: relative;
+        bottom: 5px;
+        
+    }
+
+}
 }
