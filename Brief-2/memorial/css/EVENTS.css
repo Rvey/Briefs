@@ -86,7 +86,7 @@ justify-content: center;
 
 .event-search{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .upcoming-events{
     margin: 3em;
@@ -113,14 +113,9 @@ justify-content: center;
     
 
 }
-.c1{
-    background-image: url(extra/SPAIN.jpg);
-}
-.c2{
-    background-image: url(extra/italy.png);
-}
-.c3{
-    background-image: url(extra/tokyo-ops-7-19.jpg);
+
+.c3 , .c2 , .c1{
+    background-color: #B32137;
 }
 #f , #d{
     
@@ -178,6 +173,7 @@ justify-content: center;
     margin: 2rem;
     font-weight: bolder;
 }
+
 .books{
     display: flex;
     flex-wrap: wrap;
@@ -189,10 +185,12 @@ justify-content: center;
 .books-container{
     margin: 30px;
     max-width: 80vw;
+    transition: 350ms;
 }
 .books-container:hover{
-    transform: scale(2);
-    margin: 40px;
+   
+    transform: translateY(10px);
+    transition: 350ms;
     
 }
 .b-description{
@@ -249,20 +247,18 @@ justify-content: center;
     color: white;
     padding-bottom: 65px;
 }
+
 .location{
     display: flex;
-    flex-direction:column ;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-
 iframe{
-    width:90vw;
+    width:70vw;
     height:300px;
 }
 .p5 p{
     font-size: 24px;
     margin: 1rem;
-    font-weight: bold;   
-   
+    font-weight: bold;
 }

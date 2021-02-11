@@ -1,4 +1,44 @@
 
+@media only screen and (min-width: 718px){
+    iframe{
+        width:400px;
+        height:300px;
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        margin: 45px 19px;
+        
+    }
+    .p5 p {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        color: #000000;
+        
+    }
+
+
+}
+
+@media only screen and (min-width: 768px){
+    .book-img img{
+        height: 20vw;
+        }
+        .book-ad{
+            display: flex;
+            justify-content: center;
+        }
+        #p3 {
+            font-size: 18px;
+        }
+        .text-container{
+            padding: 7rem;
+            } 
+            
+}
+
 @media only screen and (min-width: 900px){
     .book-fair{
         display:flex;
@@ -22,53 +62,4 @@
         padding: 3rem;
     }
     
-   
-
-@media only screen and (min-width: 768px){
-    .book-img img{
-        height: 20vw;
-        }
-        .book-ad{
-            display: flex;
-            justify-content: center;
-        }
-        #p3 {
-            font-size: 18px;
-        }
-        .text-container{
-            padding: 7rem;
-            } 
-            
-}
-@media only screen and (min-width: 718px){
-    iframe{
-        width:500px;
-        height:300px;
-    }
-    .location{
-        display: flex;
-        flex-direction: row;
-        margin: 45px 19px;
-        
-    }
-    .p5 p {
-        padding: 20px;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-        color: white;
-        background-color: #b3213775;
-        
-
-    }
-    .p5{
-        height: 300px;
-        background-image:url(extra/jRowling\ \(2\).png) ;
-       background-size: cover;
-        position: relative;
-        bottom: 5px;
-        
-    }
-
-}
 }
