@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(129,37,108,1) 0%, rgba(179,33,55,0.6166841736694677) 50%, rgba(175,33,59,0.6334908963585435) 75%);
+    background: linear-gradient(0deg, #020024 0%, #81256c 0%, #b321379d 50%, #af213ba1 75%);
 }
 .input{
     padding: 20px 20px;
@@ -110,15 +110,12 @@ justify-content: center;
     background-size: cover;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    
-
 }
 
 .c3 , .c2 , .c1{
     background-color: #B32137;
 }
-#f , #d{
-    
+#f , #d{   
     color: #ffffff;
     font-weight: bolder;
     padding: 40px;
@@ -139,7 +136,6 @@ justify-content: center;
     position: absolute;
     bottom: 0;
     right: 0;
-    
     height: 50px;
     width: 150px;
     background-color: #000000;
@@ -149,7 +145,6 @@ justify-content: center;
 .btn-f:hover{
     background-color: var(--color4);
     color: var(--white);
-
 }
 .card-e {
     margin: 10px;
@@ -179,7 +174,6 @@ justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 6rem;
-
 }
 
 .books-container{
@@ -206,16 +200,13 @@ justify-content: center;
     
 }
 .book-d{
-    
     text-align: center;
-    font-size: 10px;
-    
+    font-size: 10px; 
 }
 
 .picks{
     text-align: center;
     font-weight: bold;
-    
 }
 .pick-container{
     margin: 20px;

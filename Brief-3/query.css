@@ -1,0 +1,48 @@
+@media (max-width: 560px) {
+  select,
+  #days_count,
+  .submit {
+    width: 20em;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 23em;
+  }
+}
+
+@media (max-width: 380px) {
+  select,
+  #days_count,
+  .submit {
+    width: 17em;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact-side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-list {
+    display: none;
+  }
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .showcase .text h2 {
+    font-size: 3em;
+    line-height: 49px;
+  }
+  .showcase .text p {
+    font-size: 1em;
+  }
+  .contact-side {
+    display: none;
+  }
+}
+/*# sourceMappingURL=query.css.map */
