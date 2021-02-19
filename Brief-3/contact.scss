@@ -146,7 +146,9 @@ $color6 :#362885;
 }
 
 .toggle {
-
+    
+    position: fixed;
+    right: 1em;
     width: 60px;
     height: 60px;
     background: url(https://i.ibb.co/HrfVRcx/menu.png);
@@ -154,8 +156,6 @@ $color6 :#362885;
     background-size: 30px;
     background-position: center;
     cursor: pointer;
-    position: fixed;
-    right: 4em;
 }
 
 .toggle.active {
@@ -298,7 +298,7 @@ $color6 :#362885;
     
     
 }
-#btn-sub {
+.btn {
     background-color: $color2;
     padding: 1.3em 4em;
     border: none;
@@ -310,3 +310,51 @@ $color6 :#362885;
         color: $coloe1;
     }
 }
+.pr{
+    background-color: rgba(255, 222, 173, 0);
+    border: none;
+    color: white;
+    @include poppins() ;
+    
+}
+#modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba($color: black, $alpha: .7);
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    overflow: hidden;
+    // display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    #modal-content {
+        background-color: $color6;
+        color: white;
+        border-radius: 10px;
+
+        #close {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 900;
+            background: $color2;
+            cursor: pointer;
+            border-radius: 10px 10px 0 0;
+
+        }
+
+        p {
+            padding: 2rem;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+    }
+}
+  //--------------------------------------
+  

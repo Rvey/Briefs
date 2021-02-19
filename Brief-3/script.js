@@ -17,7 +17,12 @@ function check_type() {
     switch (vehicle_type.value) {
         case "moto":
             select_carburant.innerHTML = choix;
-            select_carburant.innerHTML += `<option value="${carburant[0]}"> ${carburant[0]}</option> <option value="${carburant[0]}>  ${carburant[0]}</option>`;
+            // for (let i = 0; i < 2; i++) {
+            //     select_carburant.innerHTML += `<option value="${carburant[i]}"> ${carburant[i]}</option>`;
+            // }
+            // select_carburant.innerHTML += `<option value="${carburant[0]}"> ${carburant[0]}</option> <option value="${carburant[0]}>  ${carburant[0]}</option>`;
+            select_carburant.innerHTML += `<option value="${carburant[0]}"> ${carburant[0]}</option>`;
+            select_carburant.innerHTML += `<option value="${carburant[2]}"> ${carburant[2]}</option>`;
             select_boite.innerHTML = `<option value "none">none</option> `;
             price_car = 10;
             price_boite = 0 ; 
@@ -118,9 +123,14 @@ function calcul() {
 
     price_pers = days_count.value * (price_car + (price_car * price_carburant) + (price_car * price_boite));
 
-    alert(days_count.value + " price_car " + price_car + " price_carburant " + price_carburant + " price_boite " + price_boite);
-
-    alert("Price Total : " + price_pers + "€");
+    // alert(days_count.value + " price_car " + price_car + " price_carburant " + price_carburant + " price_boite " + price_boite);
+    var total = price_pers + " €";
+    
+    
+    document.getElementById("result").value = total ;
+   // alert("Price Total : " + price_pers + "€");
+    
+    
 }
 select_carburant.addEventListener("change", carburant_check);
 select_boite.addEventListener("change", boit_check);

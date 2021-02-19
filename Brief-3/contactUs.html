@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="query.css">
+  <link rel="stylesheet" href="query.css">
   <title>Contact</title>
 </head>
 
@@ -22,6 +22,8 @@
       </ul>
       <div class="toggle"></div>
     </header>
+
+
     <ul class="social">
       <li>
         <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt="facebook">
@@ -35,56 +37,69 @@
 
     <!-- form -->
     <div class="c-container">
-    <div class="contact-container">
+      <div class="contact-container">
 
-      <div class="contact-form">
-        <h1>Contact us</h1>
-        <div class="txtb">
-          <label>First Name :</label>
+        <div class="contact-form">
+          <h1>Contact us</h1>
+          <div class="txtb">
+            <label>Full  Name :</label>
+          </div>
+          <input type="text" id="fname" placeholder="Enter full Name">
+          <!-- <div class="txtb">
+            <label>Last Name :</label>
+          </div>
+          <input type="text" id="lname" placeholder="Enter Your LastName"> -->
+          
+          <div class="txtb">
+            <label>Email :</label>
+          </div>
+          <input type="email" id="email" placeholder="Enter Your Email">
+          <div class="txtb">
+            <label>Subject :</label>
+          </div>
+          <input type="text" id="subj" placeholder="Enter subject ...">
+          <div class="txtb">
+            <label>Message :</label>
+          </div>
+          <textarea></textarea>
+
+          
+          <div class="send-button">
+            <button class="btn" onclick="displayModal()">Send</button>
+          </div>
         </div>
-        <input type="text" id="fname" placeholder="Enter Your Fisrt Name">
 
+        <div class="contact-side">
+          <img class="img-contact" src="img/contact.png" alt="message">
+          <p class="contact-p">
+            If you have questions or just want to get in touch, use the form below. We look forward to hearing from you!
+          </p>
 
-        <div class="txtb">
-          <label>Last Name :</label>
         </div>
-        <input type="text" id="lname" placeholder="Enter Your LastName">
-
-        <div class="txtb">
-          <label>Email :</label>
-        </div>
-        <input type="email" id="email" placeholder="Enter Your Email">
 
 
-        <div class="txtb">
-          <label>Message :</label>
-        </div>
-        <textarea></textarea>
 
 
-        <div class="send-button">
-          <button type="submit" id="btn-sub">Send</button>
-        </div>
-      
+
 
       </div>
-
-      <div class="contact-side">
-        <img class="img-contact" src="img/contact.png" alt="message">
-        <p class="contact-p">
-          If you have questions or just want to get in touch, use the form below. We look forward to hearing from you!
-        </p>
-
-      </div>
-
-
-
-
-
-
     </div>
+  <!-- The Modal -->
+<div id="modal">
+  <div id="modal-content">
+      <div id="close">&times;</div>
+      <p>Your order Mr/Mrs 
+        <span id="nameDisp"></span>
+      
+        , with the e-mail <span id="emailDisp">tst2</span> has successfully reached us. We'll get back to you soon.
+       </p>
   </div>
+</div>
+
+
+
   </section>
+  
   <div class="menu">
     <ul>
       <li><a href="home.html">Home</a></li>

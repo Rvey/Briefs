@@ -88,7 +88,7 @@
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #ff3234;
+  background-color: #6149e1;
   position: absolute;
   left: 0;
   -webkit-transform: scaleX(0);
@@ -132,7 +132,7 @@
 
 .toggle {
   position: fixed;
-  right: 4em;
+  right: 1em;
   width: 60px;
   height: 60px;
   background: url(https://i.ibb.co/HrfVRcx/menu.png);
@@ -269,6 +269,7 @@ select {
   background-color: #3b3c47;
   border-bottom: .7em solid white;
   color: white;
+  padding-left: 2em;
 }
 
 #days_count {
@@ -302,7 +303,7 @@ select {
 }
 
 .submit {
-  width: 22em;
+  width: 60%;
   height: 4em;
   border: none;
   cursor: pointer;
@@ -341,5 +342,23 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.result-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 21em;
+  gap: 1em;
+  color: #000000;
+}
+
+#result {
+  font-size: 1em;
+  width: 40%;
+  text-align: center;
 }
 /*# sourceMappingURL=reservation.css.map */
