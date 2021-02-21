@@ -1,24 +1,75 @@
-.row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    margin-top: 4em;
+body {
+  margin: 20px;
+  padding: 0;
+  background: #333;
 }
-
-
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+.logo-container{
+  h2{
+    color: white;
+    text-align: center;
+  }
 }
-
-
-
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.img-logo {
+  display: flex;
+  flex-wrap: wrap;
  
+  justify-content: center;
+  gap: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  img{
+    max-width: 12vw;
+  }
+}
+.imgs-container{
+  h2 {
+    text-align: center;
+    color: white;
+}
+}
+.img-cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  grid-gap: 0.4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.imgc {
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    transform: translateY(-.7rem);
+  }
+
+ 
+
+  .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  
+    h3 {
+      font-size: 3.4vw;
+      color: white;
+    }
+
+    p {
+      font-size: 1vw;
+      color: white;
+     
+
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    max-width: 30vw;
+
+  }
 }

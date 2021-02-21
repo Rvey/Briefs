@@ -1,0 +1,84 @@
+.div-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  background-color: #1b1b1b;
+}
+
+.div-select h1 {
+  color: #ffffff;
+}
+
+select {
+  width: 33em;
+  height: 4em;
+  border: none;
+  border-bottom: 0.5em solid #ff3234;
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
+#days_count {
+  width: 33em;
+  height: 4em;
+  text-align: center;
+  border: none;
+  border-bottom: 0.5em solid #ff3234;
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
+#days_count::placeholder {
+  text-align: center;
+}
+
+.result-sub {
+  display: flex;
+  height: 4em;
+  gap: 2em;
+  width: 100%;
+}
+
+.submit {
+  padding: 1.3em 7vw;
+  border: none;
+  background-color: #ff3234;
+  color: #ffffff;
+  width: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.submit:hover {
+  background-color: #3f3f3f;
+}
+
+#result {
+  text-align: center;
+  width: 7em;
+  background-color: #1b1b1b;
+  border: 1px solid #ff3234;
+  color: #ffffff;
+  font-weight: bold;
+  width: 50%;
+}
+
+.subs {
+  width: 48vw;
+  background-color: #ff3234;
+  margin: 5em;
+  padding: 2em;
+}
+
+.select-container {
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  justify-content: center;
+  /* align-items: normal; */
+}
+/*# sourceMappingURL=reserve.css.map */

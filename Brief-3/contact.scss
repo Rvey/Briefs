@@ -1,273 +1,56 @@
-$coloe1:#ffffff;
-$color2 :#6149e1;
-$color3 :#ff3234;
-$color4 :#000000;
-$color5 :#3b3c47;;
-$color6 :#362885;
-@mixin poppins {
-    font-family: 'Poppins', sans-serif;
+$color1 :#3f3f3f;
+$color2:#ffffff;
+$color3 :#1b1b1b;
+$color4 :#ff3234;
+body{
+background-color: #1b1b1b;
 }
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    @include poppins();
-}
-
-.showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(37, 37, 37);
-    color: #ffffff;
-    z-index: 2;
-    transition: .5s;
-
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 40px 100px;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-}
-
-.nav-list {
-    display: flex;
-    width: 40em;
-    justify-content: space-evenly;
-}
-
-.nav-item {
-    list-style: none;
-    margin: 1em;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    padding: 4px 0;
-}
-
-.nav-link::before,
-.nav-link::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: $color2;
-    position: absolute;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.5s;
-
-
-
-}
-
-.nav-link:hover::before,
-.nav-link:hover::after {
-    transform: scaleX(1);
-    transition: transform 0.5s;
-}
-
-.nav-link::after {
-    bottom: 0;
-    transform-origin: right;
-}
-
-.nav-link::before {
-    top: 0;
-    transform-origin: left;
-}
-
-
-.showcase.active {
-    right: 300px;
-}
-
-// .overlay {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 255, 0.205);
-// }
-
-.text {
-    position: relative;
-    z-index: 10;
-
-    h2 {
-        font-size: 5em;
-        font-weight: 700;
-        line-height: 1.5em;
-    }
-
-    p {
-        font-size: 1.1em;
-        margin: 20px 0;
-        font-weight: 400;
-        max-width: 500px;
-    }
-
-    a {
-        display: inline-block;
-        font-size: 1em;
-        background-color: white;
-        padding: 10px 30px;
-        text-decoration: none;
-        color: black;
-        margin-top: 10px;
-        letter-spacing: 2px;
-
-        &:hover {
-            transform: translateX(4px) translateY(-2px);
-        }
-    }
-
-}
-
-.toggle {
-    
-    position: fixed;
-    right: 1em;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.toggle.active {
-    background: url(img/close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.social {
-    position: absolute;
-    bottom: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    li {
-        list-style: none;
-
-        a {
-            display: inline-block;
-            filter: invert(1);
-            margin-right: 20px;
-            transform: scale(0.5);
-            transition: 0.5S;
-
-            &:hover {
-                transform: scale(0.5) translateY(-15px);
-            }
-        }
-    }
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    ul {
-        position: relative;
-     list-style: none;
-            position: relative;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-            justify-content: left;
-            align-items: center;
-            /* margin-top: 13em; */
-        
-        li {
-            a {
-                text-decoration: none;
-                font-size: 24px;
-                color: $color4;
-
-                &:hover {
-                    color: $color2;
-                }
-            }
-        }
-    }
-}
-
 .contact-container {
     display: flex;
-    margin-top: 7em;
     justify-content: center;
 }
 
 .contact-form {
-    background-color: $color2;
+    background-color: $color3;
     padding: 2em;
-    
+    color: $color2;
+   
 
     input,
     textarea {
         border: none;
-        background-color: $color5;
-        border-bottom: 3px solid $coloe1;
+        background-color: $color3;
+        border-bottom: 3px solid $color4;
         width: 37em;
         height: 3em;
-        color: $coloe1;
+        color: white;
         padding-left: 1em;
+        &::placeholder{
+          color: rgba(255, 255, 255, 0.596);
+        }
 
     }
 
     textarea{
         padding-top: 1em;
         height: 5em;  
+        border:  3px solid $color4;
     }
 
 }
 
 .c-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-side {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: $color6;
+    background-color: $color4;
 }
 
 .contact-p {
@@ -286,10 +69,6 @@ $color6 :#362885;
     margin: 19px;
 }
 
-.focus {
-    font-weight: 800;
-    color: $color3;
-}
 
 .send-button {
     display: flex;
@@ -299,40 +78,42 @@ $color6 :#362885;
     
 }
 .btn {
-    background-color: $color2;
+    
     padding: 1.3em 4em;
     border: none;
     font-size: 1em;
-    background-color: $coloe1;
+    background-color: $color4;
     cursor: pointer;
+    color: $color2;
+    font-weight: bold;
     &:hover{
-        background-color: $color6;
-        color: $coloe1;
+        background-color: $color1;
+        color: white;
+        
     }
 }
 .pr{
     background-color: rgba(255, 222, 173, 0);
     border: none;
     color: white;
-    @include poppins() ;
+  
     
 }
 #modal{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: rgba($color: black, $alpha: .7);
+   background: rgba($color: black, $alpha: .7);
     top: 0;
     left: 0;
     z-index: 100000;
     overflow: hidden;
-    // display: flex;
     display: none;
     align-items: center;
     justify-content: center;
 
     #modal-content {
-        background-color: $color6;
+        background-color: $color3;
         color: white;
         border-radius: 10px;
 
@@ -340,7 +121,7 @@ $color6 :#362885;
             font-size: 2rem;
             text-align: center;
             font-weight: 900;
-            background: $color2;
+            background: $color1;
             cursor: pointer;
             border-radius: 10px 10px 0 0;
 
@@ -356,5 +137,98 @@ $color6 :#362885;
 
     }
 }
+@media (max-width:560px) {
+
+    select,
+    #days_count {
+      width: 20em;
+    }
+  
+    .submit {
+      width: 16.5em;
+    }
+  
+    .contact-form {
+  
+      input,
+      textarea {
+        width: 23em;
+      }
+    }
+  
+    .result-sub {
+  
+      width: 17em;
+    }
+  }
+  
+    @media (max-width: 380px) {
+  
+      select,
+      #days_count {
+        width: 17em;
+      }
+  
+      .submit {
+        width: 14em;
+      }
+      .contact-form {
+  
+        input,
+        textarea {
+          width: 18em;
+        }
+      }
+  
+      .result-sub {
+        width: 14em;
+      }
+    }
+  
+    @media screen and (max-width:760px) {
+      .contact-side {
+        display: none;
+      }
+      .column {
+       
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  
+    @media screen and (max-width: 991px) {
+      .nav-list {
+        display: none;
+      }
+  
+      .showcase,
+      .showcase header {
+        padding: 40px;
+      }
+  
+      .showcase {
+  
+        .text h2 {
+          font-size: 3em;
+          line-height: 49px;
+        }
+  
+        .text p {
+          font-size: 1em;
+        }
+      }
+  
+  
+  
+      .contact-side {
+        display: none;
+      }
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+  
   //--------------------------------------
   

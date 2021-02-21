@@ -1,0 +1,83 @@
+$color1 :#3f3f3f;
+$color2:#ffffff;
+$color3 :#1b1b1b;
+$color4 :#ff3234;
+
+.div-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    background-color: $color3;
+    h1{
+        color: $color2;
+    }
+}
+select{
+    width: 33em;
+    height: 4em;
+    border: none;
+    border-bottom: .5em solid $color4;
+    background-color: $color3;
+    color: $color2;
+}
+#days_count{
+    width: 33em;
+    height: 4em;
+    text-align: center;
+    border: none;
+    border-bottom: .5em solid $color4;
+    background-color: $color3;
+    color: $color2;
+    &::placeholder{
+        text-align: center;
+    }
+}
+.result-sub {
+    display: flex;
+    height: 4em;
+    gap: 2em;
+    width: 100%;
+}
+.submit {
+    padding: 1.3em 7vw;
+    border: none;
+    background-color: $color4;
+    color: $color2;
+    width: 50%;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 15px;
+    &:hover{
+        
+        background-color: $color1;
+    }
+    
+
+}
+#result {
+text-align: center;
+width: 7em;
+background-color: $color3;
+border: 1px solid$color4;
+color: $color2;
+font-weight: bold;
+width: 50%;
+}
+
+.subs {
+    width: 48vw;
+    background-color:$color4;
+    margin: 5em;
+    padding: 2em;
+}
+.select-container {
+    
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    /* align-items: normal; */
+}
