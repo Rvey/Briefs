@@ -42,7 +42,6 @@ select {
 }
 
 .submit {
-  padding: 1.3em 7vw;
   border: none;
   background-color: #ff3234;
   color: #ffffff;
@@ -69,8 +68,12 @@ select {
 .subs {
   width: 48vw;
   background-color: #ff3234;
-  margin: 5em;
   padding: 2em;
+}
+
+.subs P {
+  color: white;
+  font-weight: bold;
 }
 
 .select-container {
