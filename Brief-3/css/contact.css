@@ -42,6 +42,10 @@ body {
   align-items: center;
 }
 
+.c-container h1 {
+  color: #ffffff;
+}
+
 .contact-side {
   display: flex;
   align-items: center;

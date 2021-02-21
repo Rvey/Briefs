@@ -81,4 +81,17 @@ select {
   justify-content: center;
   /* align-items: normal; */
 }
+
+input#ef {
+  padding: 1em;
+  border: none;
+}
+
+button.sub {
+  border: none;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #3f3f3f;
+  color: #ffffff;
+}
 /*# sourceMappingURL=reserve.css.map */
