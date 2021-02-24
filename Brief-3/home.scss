@@ -1,13 +1,13 @@
-
 $color1 :#1b1b1b;
 $color2 :#ff3234;
+
 body {
 
     padding: 0;
     margin: 0;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
- 
+
 
 }
 
@@ -17,29 +17,33 @@ main {
     padding: 1rem;
     border-radius: 40px 40px 0 0;
     overflow-x: hidden;
-    
+
 }
-.text-h{
-    
+
+.text-h {
+
     flex-direction: inherit;
     margin: auto;
     background-color: #0000005d;
     margin-bottom: 2em;
-    h1{
+
+    h1 {
 
         text-align: center;
         font-size: 3vw;
     }
-    p{
+
+    p {
         color: white;
         font-size: 1vw;
     }
 }
+
 .navbar {
     width: 5rem;
     height: 100vh;
     position: fixed;
-   z-index: 1;
+    z-index: 1;
     transition: 300ms ease;
 
     &:hover {
@@ -65,20 +69,21 @@ main {
 }
 
 
-.social{
+.social {
     width: 100%;
     display: flex;
     justify-content: center;
-gap: 2em;
-margin-top: 3em;
-margin-bottom: 2em;
-i.fab {
-    font-size: 3em;
-    color: #ff3234;
-}
+    gap: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+
+    i.fab {
+        font-size: 3em;
+        color: #ff3234;
+    }
 }
 
-.nav-item:last-child  {
+.nav-item:last-child {
     margin-top: auto;
 }
 
@@ -142,32 +147,38 @@ i.fab {
 
 .video-container {
     position: relative;
-  }
-  video {
+}
+
+video {
     height: auto;
     vertical-align: middle;
     width: 100%;
-  }
-  .overlay-desc {
-    background: rgba(0,0,0,0);
+}
+
+.overlay-desc {
+    background: rgba(0, 0, 0, 0);
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
     h1 {
         color: white;
         font-size: 2vw;
         text-align: center;
-      }
-  }
- 
+    }
+}
+
 .pg {
     width: 36vw;
     padding-left: 1em;
     display: flex;
     flex-direction: column;
-   text-align: center;
+    text-align: center;
 
 }
 
@@ -177,11 +188,12 @@ i.fab {
     text-decoration: none;
     margin-bottom: 1em;
     color: $color2;
-font-weight: bold;
-text-align: center;
-font-size: 2vw;
-margin: auto;
-    &:hover{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2vw;
+    margin: auto;
+
+    &:hover {
         background-color: $color2;
         color: $color1;
     }
@@ -223,23 +235,26 @@ margin: auto;
 
         font-size: 4em;
     }
-    span{
+
+    span {
         color: $color2;
     }
 }
+
 p.why-p {
     width: 70vw;
 }
 
-    .why-us{
-        font-size: 4em;
-        text-align: center;
-        
-        span{
-            color: $color2;
-        }
-    
+.why-us {
+    font-size: 4em;
+    text-align: center;
+
+    span {
+        color: $color2;
+    }
+
 }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -253,7 +268,7 @@ p.why-p {
     p {
         width: 41vw;
     }
-    
+
 }
 
 
@@ -263,87 +278,94 @@ p.why-p {
 
     select,
     #days_count {
-      width: 17em;
+        width: 17em;
     }
 
     .submit {
-      width: 14em;
+        width: 14em;
     }
+
     .contact-form {
 
-      input,
-      textarea {
-        width: 18em;
-      }
+        input,
+        textarea {
+            width: 18em;
+        }
     }
 
     .result-sub {
-      width: 14em;
+        width: 14em;
     }
-    
+
 
     .result-sub {
-       display: grid;
+        display: grid;
         gap: 1px;
-       
+
     }
 
 
-    
-  }
-  @media screen and (max-width: 340px){
-    #days_count{
+
+}
+
+@media screen and (max-width: 340px) {
+    #days_count {
 
         width: 90vw;
-    } 
-  }
+    }
+}
 
-  @media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
     p.why-p {
         width: 16em;
     }
-        .p-container h1 {
-            font-size: 3em;
-        }
-        .card p {
-            width: 60vw;
-        }
+
+    .p-container h1 {
+        font-size: 3em;
     }
+
+    .card p {
+        width: 60vw;
+    }
+}
+
 @media (max-width:560px) {
 
-  select,
-  #days_count {
-    width: 20em;
-  }
-
-  .submit {
-    width: 16.5em;
-  }
-
-  .contact-form {
-
-    input,
-    textarea {
-      width: 23em;
+    select,
+    #days_count {
+        width: 20em;
     }
-  }
 
-  .result-sub {
-    display: flex;
-    width: 100%;
-}
+    .submit {
+        width: 16.5em;
+    }
+
+    .contact-form {
+
+        input,
+        textarea {
+            width: 23em;
+        }
+    }
+
+    .result-sub {
+        display: flex;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  
+
     .navbar:hover {
         width: 100vw;
     }
+
     .nav-link svg {
         width: 0em;
         min-width: 2rem;
         margin: 0;
     }
+
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -371,70 +393,78 @@ p.why-p {
         margin: 0;
         margin-bottom: 5em;
     }
+
     .pg {
         width: 80vw;
     }
+
     p.why-p {
         width: 20em;
     }
-    #days_count , select{
+
+    #days_count,
+    select {
         width: 23em;
     }
+
     .overlay-desc h1 {
         color: white;
         font-size: 4vw;
         text-align: center;
     }
+
     .text-h p {
         color: white;
         font-size: 2vw;
     }
 }
 
-  @media screen and (max-width:760px) {
+@media screen and (max-width:760px) {
     .contact-side {
-      display: none;
+        display: none;
     }
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
-  @media screen and (max-width: 991px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .nav-list {
-      display: none;
+        display: none;
     }
 
     .showcase,
     .showcase header {
-      padding: 40px;
+        padding: 40px;
     }
 
     .showcase {
 
-      .text h2 {
-        font-size: 3em;
-        line-height: 49px;
-      }
+        .text h2 {
+            font-size: 3em;
+            line-height: 49px;
+        }
 
-      .text p {
-        font-size: 1em;
-      }
+        .text p {
+            font-size: 1em;
+        }
     }
 
 
 
     .contact-side {
-      display: none;
+        display: none;
     }
+
     .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
+}
 
 
 
@@ -446,6 +476,7 @@ p.why-p {
         width: 75vw;
     }
 }
+
 /* Large screens */
 @media only screen and (min-width: 600px) {
     .navbar {
@@ -469,13 +500,15 @@ p.why-p {
     .navbar:hover .logo-text {
         left: 0px;
     }
-    .book{
-    font-size:1vw;
-    margin: auto;
+
+    .book {
+        font-size: 1vw;
+        margin: auto;
     }
 }
-@media only screen and (min-width: 1800px){
-    .result-sub{
+
+@media only screen and (min-width: 1800px) {
+    .result-sub {
         width: 28em;
     }
 }

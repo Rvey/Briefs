@@ -11,7 +11,7 @@ const displayModal = () => {
    
     email = document.querySelector('#emailDisp')
   
-    name.textContent = user.name
+    
    
   
     document.querySelector('#modal').style.display = 'flex'

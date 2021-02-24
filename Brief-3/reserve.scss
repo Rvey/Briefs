@@ -10,11 +10,13 @@ $color4 :#ff3234;
     align-items: center;
     gap: 3em;
     background-color: $color3;
-    h1{
+
+    h1 {
         color: $color2;
     }
 }
-select{
+
+select {
     width: 33em;
     height: 4em;
     border: none;
@@ -22,7 +24,8 @@ select{
     background-color: $color3;
     color: $color2;
 }
-#days_count{
+
+#days_count {
     width: 33em;
     height: 4em;
     text-align: center;
@@ -30,54 +33,61 @@ select{
     border-bottom: .5em solid $color4;
     background-color: $color3;
     color: $color2;
-    &::placeholder{
+
+    &::placeholder {
         text-align: center;
     }
 }
+
 .result-sub {
     display: flex;
     height: 4em;
     gap: 2em;
     width: 100%;
 }
+
 .submit {
-    
+
     border: none;
     background-color: $color4;
     color: $color2;
     width: 50%;
- cursor: pointer;
- font-weight: bold;
- font-size: 15px;
-    &:hover{
-        
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
+    &:hover {
+
         background-color: $color1;
     }
-    
+
 
 }
+
 #result {
-text-align: center;
-width: 7em;
-background-color: $color3;
-border: 1px solid$color4;
-color: $color2;
-font-weight: bold;
-width: 50%;
+    text-align: center;
+    width: 7em;
+    background-color: $color3;
+    border: 1px solid$color4;
+    color: $color2;
+    font-weight: bold;
+    width: 50%;
 }
 
 .subs {
     width: 48vw;
-    background-color:$color4;
+    background-color: $color4;
 
     padding: 2em;
-    P{
+
+    P {
         color: white;
         font-weight: bold;
     }
 }
+
 .select-container {
-    
+
     margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
@@ -85,10 +95,12 @@ width: 50%;
     justify-content: center;
     /* align-items: normal; */
 }
+
 input#ef {
     padding: 1em;
     border: none;
 }
+
 button.sub {
     border: none;
     padding: 1em;

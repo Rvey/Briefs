@@ -1,4 +1,3 @@
-
 // select menu 
 let select_carburant = document.getElementById("carburant");
 let select_boite = document.getElementById("boit");
@@ -21,7 +20,7 @@ function check_type() {
             select_carburant.innerHTML += `<option value="${carburant[2]}"> ${carburant[2]}</option>`;
             select_boite.innerHTML = `<option value "none">none</option> `;
             price_car = 10;
-            price_boite = 0 ; 
+            price_boite = 0;
             break;
 
 
@@ -121,12 +120,12 @@ function calcul() {
 
     // alert(days_count.value + " price_car " + price_car + " price_carburant " + price_carburant + " price_boite " + price_boite);
     var total = price_pers + " €";
-    
-    
-    document.getElementById("result").value = total ;
-   // alert("Price Total : " + price_pers + "€");
-    
-    
+
+
+    document.getElementById("result").value = total;
+    // alert("Price Total : " + price_pers + "€");
+
+
 }
 select_carburant.addEventListener("change", carburant_check);
 select_boite.addEventListener("change", boit_check);
