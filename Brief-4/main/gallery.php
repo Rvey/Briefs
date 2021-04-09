@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./scss/style.css">
 	<script src="./js/slider.js"></script>
 </head>
+
 <body>
 	<?php
 		include_once './html-includes/mnav-incl.php';
