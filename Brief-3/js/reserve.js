@@ -9,6 +9,14 @@ let price_carburant;
 let price_boite;
 
 
+
+
+select_carburant.addEventListener("change", carburant_check);
+select_boite.addEventListener("change", boit_check);
+document.getElementById("submit").addEventListener("click", calcul);
+
+
+
 function check_type() {
     let choix = "<option>-- select ---</option>"
     var vehicle_type = document.getElementById("ver--type");
@@ -127,6 +135,3 @@ function calcul() {
 
 
 }
-select_carburant.addEventListener("change", carburant_check);
-select_boite.addEventListener("change", boit_check);
-document.getElementById("submit").addEventListener("click", calcul);
