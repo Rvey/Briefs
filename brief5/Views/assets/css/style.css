@@ -531,7 +531,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
   }
 }
-
+.btnn{
+  background-color: #00B9AEFF !important;
+  border:none  ;
+}
+.btnn:hover{
+  background-color: #1e6d69 !important;
+}
 @media (max-height: 500px) {
   #hero {
     height: 120vh;

@@ -43,20 +43,7 @@ include 'header.php';
 
         </div>
 
-        <div class="row g-5">
 
-            <div class="col-md-5 col-lg-4 order-md-last mb-5">
-                <div class="card-group">
-                    <div class="card">
-                        <img id="img_room" src="assets/img/about.jpg" class="card-img-top" alt="..." width="150px"
-                             height="400px">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
             <div class="col-md-7 col-lg-8">
                 <h4 class="mb-3">Choisissez votre chambre pour réserver</h4>
                 <form method="post" action="../Controllers/setData.php" class="needs-validation" id="form_res"
@@ -173,7 +160,7 @@ include 'header.php';
                         <hr class="my-4">
 <!--                    </div>-->
                         <div class="col-4">
-                            <button type="submit" class="w-100 btn btn-primary btn-md shadow rounded" name="submit"
+                            <button type="submit" class="w-100 btn btnn btn-primary btn-md shadow rounded" name="submit"
                                     value="submit">submit
                             </button>
                         </div>
