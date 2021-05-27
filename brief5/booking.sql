@@ -33,18 +33,19 @@ SET time_zone = "+00:00";
 # (1, 'neovic', 'devierte', 'Neovic Devierte'),
 # (2, 'gemalyn', 'cepe', 'Gemalyn Cepe');
 
-
+create database booking ;
 
 CREATE TABLE `users` (
                          `id` int(11) NOT NULL AUTO_INCREMENT,
-                         `username` varchar(30) NOT NULL,
-                         `password` varchar(30) NOT NULL,
-                         `fname` varchar(100) NOT NULL,
+                         `name` varchar(30) NOT NULL,
+                         `email` varchar(30) NOT NULL,
+                         `password` varchar(100) NOT NULL,
                          PRIMARY KEY(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP  table book;
 
 CREATE TABLE `book` (
-  `id` int(11) primary key NOT NULL,
+  `id` int(11) auto_increment primary key NOT NULL,
   `room_name` varchar(50) DEFAULT NULL,
   `room_type` varchar(50) DEFAULT NULL,
   `room_view` varchar(50) DEFAULT NULL,
@@ -55,7 +56,10 @@ CREATE TABLE `book` (
   `pension_name` varchar(50) DEFAULT NULL,
   `pension_type` varchar(50) DEFAULT NULL,
   `total` varchar(50) DEFAULT NULL,
-  `unique_id` varchar(50) DEFAULT NULL
+  `unique_id` varchar(50) DEFAULT NULL ,
+  `user_id` varchar(50) DEFAULT NULL,
+  `check_in` varchar(50) DEFAULT NULL,
+  `check_out` varchar(50) DEFAULT NULL
 
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

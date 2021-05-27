@@ -12,7 +12,7 @@ function show_reservations()
         echo '<div class="card" style="width: 18rem;">
     <div class="card-body">
 
-        <h3 class="card-title">Reservation </h3>
+        <h3 class="card-title"> RESERVATION :' .$row['id']. '</h3>
         <h6 class="card-subtitle mb-2 text-muted">PRICE :</h6>
         <p class="card-text">'.$row['total'].' DH</p>
 
