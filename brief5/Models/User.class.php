@@ -19,7 +19,7 @@ class User extends Database
 
     public function get_reservation($id): array
     {
-        $sql = "select * from book where user_id = ? group by unique_id";
+        $sql = "select * from book where user_id = ? group by unique_id ORDER BY id ASC";
         $query = $this->connect()->prepare($sql);
         $query->execute([$id]);
         return $query->fetchAll();

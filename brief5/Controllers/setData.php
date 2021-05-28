@@ -3,7 +3,7 @@ include "../includes/autoload.inc.php";
 session_start();
 function test_id()
 {
-    $idd = 'Re' . rand(min: 999, max: 999999);
+    $idd = 'Re' . rand(min: 999 , max: 999999);
     return $idd;
 }
 
