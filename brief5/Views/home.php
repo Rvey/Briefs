@@ -1,4 +1,3 @@
-<<<<<<< HEAD:brief-5/Views/home.php
 <!DOCTYPE html>
 <html lang="en">
 
@@ -246,7 +245,3 @@ include 'footer.php';
 </body>
 
 </html>
-=======
-<?php
-include 'Views/home.php';
->>>>>>> parent of 722b4ff (links fix):brief5/index.php
