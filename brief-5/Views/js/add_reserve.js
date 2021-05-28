@@ -71,6 +71,7 @@ $(document).ready(function () {
 
             rooms.onchange = () => {
 
+
                 if (rooms.value == 'double') {
 
                     room_types.innerHTML = initialise;
@@ -129,10 +130,6 @@ $(document).ready(function () {
         counter--;
         count.value = counter;
     });
-
-
-
-    
 // $('.remove').on('click' , function (){
 //     console.log('ja');
 // })
