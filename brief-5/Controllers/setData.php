@@ -103,7 +103,9 @@ if (isset($_POST['submit'])) {
             ':check_in' => $check_in,
             ':check_out' => $check_out
         );
-        $test = new Insert($final);
+//        $test = new Insert($final);
+        $insert = new Insert();
+        $insert->insert_data($final);
     }
     header('location: ../Views/log.php');
 }

@@ -125,7 +125,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.remove', function () {
         $(this).closest('.hmm').remove();
-        console.log('test')
+        // console.log('test')
         counter--;
         count.value = counter;
     });

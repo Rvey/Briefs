@@ -14,7 +14,7 @@
                 <?php
                 if (!empty($_SESSION['id'])){
                 ?>
-                <li><a class="nav-link " href="../Controllers/logout.con.php">log out</a></li>
+                <li><a class="nav-link " href="Controllers/logout.con.php">log out</a></li>
                     <li><a class="nav-link " href="Views/log.php">log</a></li>
                 <?php
                 }else{
