@@ -1,10 +1,11 @@
 <?php
 include '../includes/autoload.inc.php';
+
 if (isset($_POST['submit'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-
+  
     $login = new User();
     $row = $login->login($email,$password);
     session_start();
