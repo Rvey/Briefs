@@ -89,25 +89,16 @@ export default {
           .then(response => response.json())
           .then(data => this.userData = data)
           .then(this.check)
-
-
     },
     check() {
 
       if (this.userData === 'error') {
-
         this.$router.push('/login')
-
-
       } else {
 
-        // store data locally
-
-
+        // store data 
         sessionStorage.setItem("email", this.email);
         sessionStorage.setItem("token", this.token);
-
-
         this.$router.push('/')
 
 

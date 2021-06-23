@@ -20,7 +20,7 @@ class Rdv extends Database
 
     public function getUserRdv($token): array
     {
-        $sql = "SELECT *  FROM rdv WHERE token = ? order by date ";
+        $sql = "SELECT *  FROM rdv WHERE token = ? order by date";
         $result = $this->connect()->prepare($sql);
         $result->execute([$token]);
         return $result->fetchAll();

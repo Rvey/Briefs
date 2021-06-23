@@ -14,7 +14,7 @@ $email = $_GET['email'];
 $token = tokenGen($Name, $email);
 
 $insertUser = new User;
-$rows = $insertUser->insertUser($Name, $lastName, $email, $token);
+$table = $insertUser->insertUser($Name, $lastName, $email, $token);
 
 echo json_encode($token);
 

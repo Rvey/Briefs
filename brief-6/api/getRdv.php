@@ -9,11 +9,11 @@ $date = $_GET['date'];
 
 
 $Rdv = new Rdv;
-$rows = $Rdv->getRdv($date);
+$table = $Rdv->getRdv($date);
 
-if (sizeof($rows) != 0){
+if (sizeof($table) != 0){
     $getRdv_arr =[];
-    foreach ( $rows as $row ) {
+    foreach ( $table as $row ) {
         $getRdv = [
             'Rdv_id' => $row['rdv_id']
         ];

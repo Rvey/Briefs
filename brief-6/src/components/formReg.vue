@@ -129,7 +129,6 @@ export default {
           .then(response => response.json())
           .then(data => this.tokenG = data)
           .then(this.token)
-      // redirect after register
 
 
     },

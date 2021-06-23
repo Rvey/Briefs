@@ -154,7 +154,6 @@
       </div>
     </div>
   </section>
-
   <section class="about text-gray-600 body-font ">
     <div class="relative inset-0 bg-gray-900 opacity-70 h-full ">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">

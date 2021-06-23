@@ -57,8 +57,6 @@
       </div>
     </div>
   </section>
-
-
 </template>
 
 <script>
@@ -76,14 +74,14 @@ export default {
   }
   ,
   methods: {
-    // get my reserve
+    // get all appointment of the client by sending his token
     sendRdv() {
       fetch('http://localhost/brief-6/api/getExistRdv.php?token=' + this.token, {
         method: 'get'
       })
           .then(response => response.json())
           .then(data => this.myRdv = data)
-      console.log(this.myRdv)
+          console.log(this.myRdv)
     },
     DeleteRdv(id) {
       fetch('http://localhost/brief-6/api/DeleteRdv.php?id=' + id, {
@@ -100,6 +98,13 @@ export default {
 
   }
 }
+
+
+
+// send token with fetch  to the appointment table to get all the appointment for that user
+
+
+
 </script>
 
 <style scoped>

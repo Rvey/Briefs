@@ -11,14 +11,14 @@ $token = $_GET['token'];
 
 
 $getuser = new User;
-$rows = $getuser->getUser($email , $token);
+$table = $getuser->getUser($email , $token);
 
 
 
 
-if (sizeof($rows) != 0){
+if (sizeof($table) != 0){
     $getusers_arr =[];
-    foreach ( $rows as $row ) {
+    foreach ( $table as $row ) {
         $getusers = [
             'token' => $row['token'],
             'email' => $row['email']

@@ -1,5 +1,5 @@
 <template>
-  <div class=" dash  mx-auto px-4 sm:px-8 h-screen ">
+  <div class=" dash  mx-auto px-4 sm:px-8 h-screen  ">
     <div class="py-8 mt-auto">
       <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto flex mt-10">
         <div
@@ -21,22 +21,23 @@
                 type="date"
             />
           </div>
-          <table class="min-w-full leading-normal  ">
+          <table class="min-w-full leading-normal hidden" >
             <thead class="bg-white bg-opacity-30 ">
-            <tr>
+            <tr class="">
               <!-- lawyer -->
               <th
                   scope="col"
-                  class="px-5 py-3 text-white text-left text-sm uppercase font-normal"
+                  class="px-5 py-3 text-white text-left text-sm uppercase font-normal "
               >
-                Lawyer
+                Appointment
               </th>
               <!-- Schdule number -->
               <th
                   scope="col"
                   class="px-5 py-3 text-white text-left text-sm uppercase font-normal"
+
               >
-                Lawyer
+                Date
               </th>
               <!-- Schadule -->
               <th
@@ -48,36 +49,30 @@
               <!-- availability -->
               <th
                   scope="col"
-                  class="px-5 py-3 text-white text-left text-sm uppercase font-normal"
-              >
-                availability
-              </th>
-              <!-- actions -->
-              <th
-                  scope="col"
-                  class="px-5 py-3 text-white  text-sm uppercase font-normal text-center"
+                  class="px-5 py-3 text-white text-left text-sm uppercase font-normal text-center"
               >
                 Action
               </th>
+
             </tr>
             </thead>
             <tbody class="">
             <tr
                 v-for="item in schedule"
                 :key="item.id"
-                class="bg-white bg-opacity-30 border-b border-gray-300"
+                class="bg-white bg-opacity-30 border-b border-gray-300 candice " v-bind:id="item.id"
             >
               <!-- lawyer -->
-              <td class="px-5 py-5 text-base font-medium tracking-wider ">
-                <div class="flex items-center">
+              <td class="px-5 py-5 text-base font-medium tracking-wider  ">
+                <div class="flex items-center ">
                   <div class="ml-3">
-                    <p class="text-white whitespace-no-wrap rdvId">
+                    <p class="text-white whitespace-no-wrap rdvId ">
                       {{ item.id }}
                     </p>
                   </div>
                 </div>
               </td>
-              <!-- Schdule number -->
+              <!-- Schdule date -->
               <td class="px-5 py-5 text-base font-medium tracking-wider ">
                 <div class="flex items-center">
                   <div class="ml-3">
@@ -87,7 +82,7 @@
                   </div>
                 </div>
               </td>
-              <!-- Schedule -->
+              <!-- Schedule time -->
               <td class="px-5 py-5 text-base font-medium tracking-wider ">
                 <div class="flex items-center">
                   <div class="ml-3">
@@ -98,28 +93,10 @@
                 </div>
               </td>
               <!-- availability -->
-              <td v-bind:id="item.id" class="px-5 py-5 text-sm status ">
-                  <span class=" py-2 px-4 bg-red-500 rounded-xl ">
-                    free
-                  </span>
-              </td>
-              <!-- actions -->
-              <td v-bind:id="item.id" class=" text-sm candice">
-                <svg
-                    @click="send(item.id, item.start)"
-                    class="w-6 h-6 m-auto text-white cursor-pointer "
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                  ></path>
-                </svg>
+              <td v-bind:id="item.id" class="px-5 py-5 text-sm action ">
+                  <button @click="send(item.id, item.start)" class=" w-full py-2 px-6 bg-black text-white hover:bg-gray-800 rounded-xl ">
+                    Book Now
+                  </button>
               </td>
             </tr>
             </tbody>
@@ -139,7 +116,7 @@ export default {
       dateNow: new Date().toISOString().slice(0, 10),
       token: sessionStorage.getItem("token"),
       RdvId: "",
-      date: "",
+      date: "--/--/----",
       myRdv: "",
     };
   },
@@ -148,80 +125,56 @@ export default {
         .then((response) => response.json())
         .then((data) => (this.schedule = data))
         .then(this.checkRdvExist);
-    this.checkRdvExist();
+    // this.checkRdvExist();
     this.sendRdv();
     this.CheckSess();
+
   },
 
   methods: {
     send(id, start) {
       fetch(
-          "http://localhost/brief-6/api/insertRdv.php?rdv_id=" +
-          id +
-          "&time=" +
-          start +
-          "&date=" +
-          this.date +
-          "&token=" +
-          this.token,
+          "http://localhost/brief-6/api/insertRdv.php?rdv_id=" + id + "&time=" + start + "&date=" + this.date + "&token=" + this.token,
           {
             method: "get",
           }
       ).then((response) => response.json());
       this.$router.push("/MyRdv");
     },
+
     dataPick() {
+      // get reserve rdv id in the current date
       this.sendRdv();
+      document.querySelector('table').classList.remove('hidden')
       fetch("http://localhost/brief-6/api/getRdv.php?date=" + this.date, {
         method: "get",
       })
           .then((response) => response.json())
           .then((data) => (this.RdvId = data))
-          .then(this.checkRdvExist);
-
-      console.log(this.RdvId);
+          .then(this.checkRdvExist)
     },
+
     checkRdvExist() {
-      var checkStatus = document.querySelectorAll(".status");
-
+      const checkStatus = document.querySelectorAll(".action");
       checkStatus.forEach((el) => {
-        el.querySelector("span").style.backgroundColor = "green";
-
-        console.log("yes");
+        el.querySelector("button").style.display = ('block');
+        // console.log("stats");
       });
 
-      if (this.checkStatus !== 0) {
+      // check if the rdv in the current date is taken
+      if (this.RdvId.length !== 0) {
         checkStatus.forEach((element) => {
-          if (this.RdvId.length != 0) {
-            this.RdvId.forEach((item) => {
-              if (parseInt(item.Rdv_id) == parseInt(element.id)) {
-                element.querySelector("span").innerHTML = "Taken";
-                element.querySelector("span").style.backgroundColor = "red";
-              }
-            });
-          }
-        });
-      }
-
-      var blockRes = document.querySelectorAll(".candice");
-
-      blockRes.forEach((el) => {
-        el.querySelector("svg").style.display = "block";
-        console.log("yes");
-      });
-
-      if (this.blockRes !== 0) {
-        blockRes.forEach((element) => {
-          if (this.RdvId.length != 0) {
-            this.RdvId.forEach((item) => {
-              if (parseInt(item.Rdv_id) == parseInt(element.id)) {
-                element.querySelector("svg").style.visibility = "hidden";
-              }
-            });
-          }
+          this.RdvId.forEach((item) => {
+            if (parseInt(item.Rdv_id) == parseInt(element.id)) {
+              element.querySelector("button").style.display = ('none');
+              // console.log( 'rdv id' , item.Rdv_id)
+              // console.log( 'status id ' ,  element.id)
+            }
+          });
         });
       }
     },
+
     // get my reserve
     sendRdv() {
       fetch(
@@ -232,7 +185,6 @@ export default {
       )
           .then((response) => response.json())
           .then((data) => (this.myRdv = data));
-      console.log(this.myRdv);
     },
     CheckSess() {
       if (!sessionStorage.getItem("token")) {
@@ -240,6 +192,7 @@ export default {
       }
     },
   },
+
 };
 </script>
 

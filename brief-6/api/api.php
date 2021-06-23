@@ -8,11 +8,11 @@ header('Content-Type: application/json');
 
 
 $scheduls = new Schedule;
-$rows = $scheduls->getData();
+$table = $scheduls->getData();
 
 $scheduls_arr = array();
 
-foreach ($rows as $row)
+foreach ($table as $row)
 {
     $scheduls_row = array(
         'id' => $row['id'],

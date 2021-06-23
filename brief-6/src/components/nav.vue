@@ -91,7 +91,7 @@ export default {
     };
   },
   methods: {
-    toggleNavbar: function () {
+    toggleNavbar () {
       this.showMenu = !this.showMenu;
     },
   },

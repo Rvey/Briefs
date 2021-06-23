@@ -9,7 +9,7 @@ $id = $_GET['id'];
 
 
 $Rdv = new Rdv;
-$rows = $Rdv->DeleteRdv($id);
+$table = $Rdv->DeleteRdv($id);
 
 
 

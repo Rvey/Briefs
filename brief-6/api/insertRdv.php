@@ -11,7 +11,7 @@ $token = $_GET['token'];
 
 
 $insertDate = new Rdv;
-$rows = $insertDate->insertDate($rdv_id, $time, $date, $token);
+$table = $insertDate->insertDate($rdv_id, $time, $date, $token);
 
 
 
