@@ -1,4 +1,4 @@
-# Wordpress installstion process
+# Wordpress installation process
 
 ## Download WampServer
 
