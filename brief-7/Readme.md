@@ -9,15 +9,8 @@ https://wordpress.org/
 ## plugin used
 ```
 Elementor
-```
-```
 Elementor Header & Footer Builder
-```
-```
-
 Elementor Pro
-```
-```
 Starter Templates
 ```
 
