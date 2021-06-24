@@ -6,7 +6,7 @@ install Wordpress
 https://wordpress.org/
 ```
 
-## plugin used
+## Used Plugin 
 ```
 Elementor
 Elementor Header & Footer Builder
