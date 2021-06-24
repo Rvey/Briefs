@@ -6,7 +6,7 @@ install Wordpress
 https://wordpress.org/
 ```
 
-## Used Plugin 
+## Plugin 
 ```
 Elementor
 Elementor Header & Footer Builder
@@ -27,6 +27,6 @@ folder path : C:\wamp64\www\brief-7
 wptest
 ``` -->
 
-## template used
+## template
 
 https://websitedemos.net/outdoor-adventure-02/
