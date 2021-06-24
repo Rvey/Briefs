@@ -41,8 +41,8 @@ password `1234`
 
 ## Install Elementor and Theme Plugins
 
-* Elementor
-* Elementor Pro
+* Elementor 
+* [Elementor Pro](https://drive.google.com/file/d/17TefwZYTzEyXa4yZlTya4R_E9Mev8k65/view)
 * Elementor Header & Footer Builder
 * Starter Templates
 
