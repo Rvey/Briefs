@@ -4,8 +4,8 @@ install wamp64
 
 ```
 localhost/ 
-add a virtual Host 
 ```
+add a virtual Host 
 
 ```
 virtual host name : wptest 
