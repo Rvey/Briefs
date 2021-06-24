@@ -1,9 +1,14 @@
 ## Installation
 
-install wamp64 
-localhost/ 
-add a virtual Host 
+install wamp64
 
+
+``` 
+localhost/ 
+```
+```
+add a virtual Host 
+```
 ```
 virtual host name : wptest 
 ```
