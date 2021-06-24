@@ -4,6 +4,8 @@
 
 Download [WampServer](https://www.wampserver.com/en/)
 
+
+
 ## Setting Up Your Local Server
 
 add virtual host > name it `wptest` > path `C:\wamp64\www\brief-7`
@@ -51,9 +53,9 @@ Starter Templates
 
 ## website
 
-![Home page](https://imgur.com/4vMcQrb)
-![Experience page](https://imgur.com/hwWDQuM)
-Format: ![Alt Text](url)
+Https://imgur.com/4vMcQrb
+https://imgur.com/hwWDQuM
+
 
 ## template used
 
