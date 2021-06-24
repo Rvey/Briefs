@@ -52,10 +52,11 @@ Starter Templates
 
 
 ## website
-![alt text](Https://imgur.com/4vMcQrb)
 
-Https://imgur.com/4vMcQrb
-https://imgur.com/hwWDQuM
+
+[Home](Https://imgur.com/4vMcQrb)
+<br/>
+[second page](https://imgur.com/hwWDQuM)
 
 
 ## template used
