@@ -41,10 +41,10 @@ password `1234`
 
 ## Install Elementor and Theme Plugins
 
-Elementor
-Elementor Pro
-Elementor Header & Footer Builder
-Starter Templates
+* Elementor
+* Elementor Pro
+* Elementor Header & Footer Builder
+* Starter Templates
 
 ## run the website 
 
