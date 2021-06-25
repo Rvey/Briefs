@@ -1,8 +1,10 @@
-# Wordpress installstion process
+# Wordpress installation process
 
 ## Download WampServer
 
 Download [WampServer](https://www.wampserver.com/en/)
+
+
 
 ## Setting Up Your Local Server
 
@@ -39,10 +41,10 @@ password `1234`
 
 ## Install Elementor and Theme Plugins
 
-Elementor
-Elementor Pro
-Elementor Header & Footer Builder
-Starter Templates
+* Elementor 
+* [Elementor Pro](https://drive.google.com/file/d/17TefwZYTzEyXa4yZlTya4R_E9Mev8k65/view)
+* Elementor Header & Footer Builder
+* Starter Templates
 
 ## run the website 
 
@@ -51,9 +53,11 @@ Starter Templates
 
 ## website
 
-![Home page](https://imgur.com/4vMcQrb)
-![Experience page](https://imgur.com/hwWDQuM)
-Format: ![Alt Text](url)
+
+[Home](Https://imgur.com/4vMcQrb)
+<br/>
+[second page](https://imgur.com/hwWDQuM)
+
 
 ## template used
 
