@@ -27,17 +27,13 @@ extract what inside the downloaded `wordpress` folder to `C:\wamp64\www\brief-7`
 
 * select language
 
-#### fill the form 
+## Credentials
 
-db name `wptest`
-user `root`
-Database host `localhost`
-
-#### fill the second form
-
-site Title `wptest`
-username `root`
-password `1234`
+* db name `wptest`
+* user/username `root`
+* Database host `localhost`
+* password `1234`
+* site Title `wptest`
 
 ## Install Elementor and Theme Plugins
 
@@ -45,14 +41,15 @@ password `1234`
 * [Elementor Pro](https://drive.google.com/file/d/17TefwZYTzEyXa4yZlTya4R_E9Mev8k65/view)
 * Elementor Header & Footer Builder
 * Starter Templates
+* UpdraftPlus
 
+## Restore backup 
+`settings` > `updraftPlus Backup` > `Upload backup files`
 ## run the website 
 
 `http://wptest/`
 
-
 ## website
-
 
 [Home](Https://imgur.com/4vMcQrb)
 <br/>
