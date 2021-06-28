@@ -26,7 +26,7 @@ root
 ![account](./shots/account.png)
 ***
 ### **plugins**
-![plugins](./shots/Plugins.png)
+![plugins](./shots/plugins.png)
 ***
 ### **shop**
 ![shop](./shots/shop.png)
