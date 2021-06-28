@@ -20,13 +20,13 @@ root
 ## Screenshots
 ***
 ### **Home**
-![Home](./shots/Home.jpeg)
+![Home](shots/Home.jpeg)
 ***
 ### **Shop**
-![Home](./shots/account.jpeg)
+![Home](shots/account.jpeg)
 ***
 ### **plugins**
-![Home](./shots/Plugins.jpeg)
+![Home](shots/Plugins.jpeg)
 ***
 ### **shop**
-![Home](./shots/shop.jpeg)
+![Home](shots/shop.jpeg)
