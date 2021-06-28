@@ -20,7 +20,7 @@ root
 ## Screenshots
 ***
 ### **Home**
-![home](./shots/Home.png)
+![home](./shots/home.png)
 ***
 ### **account**
 ![account](./shots/account.png)
