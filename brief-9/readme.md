@@ -1,6 +1,7 @@
 ## brief 9
 
 plugin qui ajoute un footer en bas des pages.
+<br/>
 ![plugin](screenshot.png)
 
 ## installation
