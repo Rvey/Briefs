@@ -1,4 +1,4 @@
-## brief 9
+## SUSFooter
 
 plugin qui ajoute un footer en bas des pages.
 <br/>
