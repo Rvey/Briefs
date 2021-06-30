@@ -2,6 +2,8 @@
 
 plugin qui ajoute un footer en bas des pages.
 <br/>
+<br/>
+<br/>
 ![plugin](screenshot.png)
 
 ## installation
