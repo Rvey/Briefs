@@ -1,4 +1,7 @@
 
+# PHP Framework Benchmark
+![benchmark](./assets/benchmark.png)
+
 # Définition des notions téchniques
  Compose: Un logiciel gestionnaire de dépendances écrit en PHP, il permet d'installer les bibliothèques et de traquer leurs versions.
 
