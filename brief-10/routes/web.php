@@ -22,7 +22,7 @@ Route::resource('/blog' , PostController::class);
 // Route::post('/comment' , [CommentController::class , 'store'])->name('comment.add') ;
 // Route::post('/comment/store', 'CommentController@store');
 // Route::post("/post/{post}/comment", "CommentController@store");
-Route::post('/post/{post}/comment', [CommentController::class, 'store']);
+// Route::post('/post/{post}/comment', [CommentController::class, 'store']);
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');

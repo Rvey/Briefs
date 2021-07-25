@@ -20,33 +20,7 @@
 </div>
 <div class="ml-6 p-5 text-xl">Commentes</div>
 
-
-<div class="card-body">
-    <h5>Display Comments</h5>
-
-
-
-    <hr />
-   </div>
-
-   <div class="card-body">
-    <h5>Leave a comment</h5>
-    <form method="post"
-    action="/post/{post}/comment">
-        @csrf
-        <div class="form-group">
-            <input type="text" name="comment" class="form-control" />
-            <input type="hidden" name="post_id" value="{{ $post->id }}" />
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-sm btn-outline-danger py-0" style="font-size: 0.8em;" value="Add Comment" />
-        </div>
-    </form>
-
-    {{-- @foreach($post->blogcomments as $blogcomment)
-    {{$blogcomment->comment}}
-@endforeach --}}
-   </div>
+@comments(['model' => $post])
 
 </div>
 
