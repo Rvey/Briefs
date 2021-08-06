@@ -2,7 +2,7 @@
 
 ## PHP Framework Benchmark
 
-![Benchmark](./diagrams/benchmark.png)
+![Benchmark](./img/benchmark.png)
 
 ## Définition des notions téchniques
 
